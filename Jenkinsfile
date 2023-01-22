@@ -2,11 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Say Hello') {
             steps {
                 echo 'Hello Phong'
-                cat code.txt
             }
-        }
+        } 
+           
+        stage('Read File'){
+            steps {
+                sh 'cat code.txt'
+            }
+        }    
     }
 }
