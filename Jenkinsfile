@@ -5,6 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello Phong'
+                cat code.txt
             }
         }
     }
